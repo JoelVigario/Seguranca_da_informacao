@@ -2,6 +2,7 @@
 
 h1, h2 {
     font-family: 'BreeSerif';
+    font-weight: normal;
 }
 
 header h1 {
@@ -9,8 +10,8 @@ header h1 {
     padding: 20px 2px;
     margin: 0px auto;
     border-radius: 10px;
-    /*background-image: linear-gradient(90deg, var(--dark-blue), var(--dark-green));*/
-    color: var(--limom-green);
+    
+    color: var(--white);
 }
 
 header p {
@@ -19,6 +20,25 @@ header p {
     padding-bottom: 20px;
     color: var(--white);
     font-family: var(--font-texto-especial);
+}
+
+main p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+article.indice h2 {
+    background-image: linear-gradient(90deg, var(--dark-blue), var(--dark-green));
+    color: var(--white);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 3px solid var(--white);
+    text-indent: 20px;
+    font-weight: lighter;
+}
+
+article.indice ol, h2 {
+    margin: 0px;
 }
 
 footer ul {
