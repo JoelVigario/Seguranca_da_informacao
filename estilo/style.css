@@ -1,34 +1,6 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('../fontes/ubuntu/UbuntuMono-Bold.ttf');
-    src: url('../fontes/ubuntu/UbuntuMono-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'BreeSerif';
-    src: url('../fontes/bree_serif/BreeSerif-Regular.ttf');
-    font-weight: 400;
-}
-
-:root {
-    --black: #000;
-    --dark-grey: #333;
-    --dark-blue: #002244;
-    --dark-green: #006D77;
-    --cyan: #00A8B5;
-    --limom-green: #8CC63F;
-    --red: #F00;
-    --light-grey: #CCC;
-    --white: #FFF;
-    --font-titulo: 'BreeSerif';
-    --font-texto: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    --font-texto-especial: 'Ubuntu';
-}
-
 body {
-    margin: 0px;
     background-color: var(--light-grey);
     font-family: var(--font-texto);
     line-height: 1.8em;
@@ -38,11 +10,20 @@ header {
     background-image: linear-gradient(180deg, rgba(0,0,0,.8), rgba(0,0,0,.0), rgba(0,0,0,.8));
     text-align: center;
     text-shadow: rgba(0, 0, 0, .8) 0px 0px 5px;
+    padding: 0px 10px;
+}
+
+nav#menu {
+    color: var(--white);
+    /*padding-bottom: 31px;*/
+    padding-top: 5px;
 }
 
 .conteiner {
+    background-color: var(--dark-blue);
     background-image: url('../imagens/encryption.jpg');
     background-size: cover;
+    box-shadow: rgba(0, 0, 0, .2) 0px 0px 16px;
 }
 
 main {
@@ -54,7 +35,7 @@ main {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: rgba(0, 0, 0, .4) 0px 0px 20px;
+    box-shadow: rgba(0, 0, 0, .2) 0px 0px 16px;
 }
 
 article.indice {
@@ -65,9 +46,31 @@ article.indice {
     border-radius: 10px;
 }
 
-footer {
+#rodape {
     background-color: var(--dark-blue);
     color: var(--white);
 }
 
+footer {
+    max-width: 600px;
+    padding: 0px 10px;
+    margin: auto;
+    text-align: center;
+}
 
+.m-0 {
+    margin: 0px;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--dark-grey);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-green);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cyan);
+}

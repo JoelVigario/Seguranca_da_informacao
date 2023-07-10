@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fontes/ubuntu/UbuntuMono-Bold.ttf');
+    src: url('../fontes/ubuntu/UbuntuMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'BreeSerif';
+    src: url('../fontes/bree_serif/BreeSerif-Regular.ttf');
+    font-weight: 400;
+}
+
+:root {
+    --black: #000;
+    --dark-grey: #333;
+    --dark-blue: #002244;
+    --dark-green: #006D77;
+    --cyan: #00A8B5;
+    --limom-green: #8CC63F;
+    --lighter-limom-green: #c0fa74;
+    --red: #F00;
+    --light-grey: #CCC;
+    --white: #FFF;
+    --font-titulo: 'BreeSerif';
+    --font-texto: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --font-texto-especial: 'Ubuntu';
+}

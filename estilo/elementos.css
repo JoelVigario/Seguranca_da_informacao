@@ -3,6 +3,7 @@
 h1, h2 {
     font-family: 'BreeSerif';
     font-weight: normal;
+    color: var(--black);
 }
 
 header h1 {
@@ -10,7 +11,12 @@ header h1 {
     padding: 20px 2px;
     margin: 0px auto;
     border-radius: 10px;
-    
+    color: var(--white);
+    line-height: 1.2em;
+    clear: both;
+}
+
+header a {
     color: var(--white);
 }
 
@@ -20,6 +26,40 @@ header p {
     padding-bottom: 20px;
     color: var(--white);
     font-family: var(--font-texto-especial);
+}
+
+nav#menu img {
+    display: block;
+    max-height: 30px;
+    float: left;
+}
+
+nav#menu ul {
+    padding: 0px 5px;
+    
+    float: right;
+}
+
+nav#menu li {
+    display: inline-block;
+    padding: 1px 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    list-style: none;
+    font-weight: lighter;
+    text-shadow: none;
+    transition-duration: .5s;
+}
+
+nav#menu li:hover {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+nav#menu #actual {
+    background-color: var(--limom-green);
+    color: var(--dark-blue);
+    font-weight: bolder;
 }
 
 main p {
@@ -37,10 +77,33 @@ article.indice h2 {
     font-weight: lighter;
 }
 
-article.indice ol, h2 {
-    margin: 0px;
+footer ul {
+   
+    padding: 20px 10px;
+    list-style: none;
+    border-bottom: 1px solid var(--limom-green);
 }
 
-footer ul {
-   margin: 0px;
+footer li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer #company {
+    padding: 20px 10px;
+}
+
+footer img {
+    display: inline;
+    height: 20px;
+}
+
+a {
+    color: var(--limom-green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--lighter-limom-green);
+    text-decoration: underline;
 }

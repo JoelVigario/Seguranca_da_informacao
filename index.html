@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segurança da informação</title>
+    <link rel="stylesheet" href="./estilo/root.css">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/elementos.css">
+    <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
 </head>
-<body>
+<body class="m-0">
     <div class="conteiner">
         <header>
+            <nav id="menu">
+                <img src="./imagens/logo.png" alt="Logotipo">
+                <ul class="m-0">
+                    <a href="#"><li id="actual">Home</li></a>
+                    <a href="pag_n_disp.html"><li>Imagens</li></a>
+                    <a href="pag_n_disp.html"><li>Sobre</li></a>
+                    <a href="pag_n_disp.html"><li>Log in</li></a>
+                </ul>
+            </nav>
             <h1>Segurança da Informação</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam architecto a corporis eos. Exercitationem placeat explicabo repellendus molestiae facere id. Sapiente vitae itaque quibusdam neque eligendi, incidunt debitis! Assumenda, dicta?</p>
         </header> 
     </div>
     
-    <nav>
-
-    </nav>
     <main>
         <h2>Indrodução</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dolor, reprehenderit a harum ab illum facere ipsa fugiat rerum. Id, at deleniti ipsum atque qui iste blanditiis tempore eaque doloremque?</p>
 
         <article class="indice">
-            <h2>Índice</h2>
-            <ol>
+            <h2 class="m-0">Índice</h2>
+            <ol class="m-0">
                 <li>Item</li>
                 <li>Item</li>
                 <li>Item</li>
@@ -34,12 +42,19 @@
         </article>
 
     </main>
-    <footer>
-        <ul>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-        </ul>
-    </footer>
+    <div id="rodape">
+        <footer>
+            <ul class="m-0">
+                <li><a href="#">Home</a></li>
+                <li><a href="pag_n_disp.html">Imagens</a></li>
+                <li><a href="pag_n_disp.html">Sobre</a></li>
+                <li><a href="pag_n_disp.html">Log in</a></li>
+            </ul>
+           <div id="company">
+            <p class="m-0">&copy; Joel Vigário | Ciber Segurity <img src="./imagens/logo.png"></p>
+            
+           </div>
+        </footer>
+    </div>
 </body>
 </html>

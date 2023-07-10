@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página não disponível</title>
+    <link rel="stylesheet" href="./estilo/root.css">
+    <style>
+        body {
+            background-color: var(--dark-blue);
+            color: var(--cyan);
+        }
+        h1 {
+            color: var(--red);
+            text-align: center;
+            font-family: var(--font-titulo);
+            font-weight: lighter;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+        a {
+            color: var(--black);
+            text-decoration: none;
+            position: fixed;
+            right: 1rem;
+            bottom: 1rem;
+            z-index: 1500;
+            background-color: var(--limom-green);
+            padding: 0.6rem;
+            border-radius: 0.3rem;
+        }
+        a:hover {
+            font-weight: bolder;
+            
+        }
+
+        ::-webkit-scrollbar {
+        background-color: var(--dark-grey);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: var(--red);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Está página não está disponível</h1>
+    <picture>
+        <source media="(max-width: 420px)" srcset="imagens/business_office_elements_data-pp.png">
+        <source media="(max-width: 720px)" srcset="imagens/business_office_elements_data-p.png">
+        <img src="imagens/business_office_elements_data-m.png" alt="Imagem que ilustra tristeza">
+    </picture>
+    <a href="index.html" rel="prev">Voltar</a>
+</body>
+</html>
