@@ -106,6 +106,8 @@ article.indice a, article.indice li {
 
 article.indice ol {
     columns: 2;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer ul {
